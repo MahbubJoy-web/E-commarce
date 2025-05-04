@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tittle{
+    @apply text-[32px] font-poppins font-bold text-gray-800;
+}
+.Cardtittle{
+    @apply text-[24px] font-poppins font-semibold text-[#3A3A3A];
+}
+
+/* -----------inspiration slider css---------- */
+.inspiration .slick-active .slider_items{
+    @apply !h-[485px] !w-[372px] relative
+}
+.inspiration .slick-current .slider_items{
+    @apply !h-[582px] duration-[1s] 
+}
+.inspiration .slick-dots li button{
+    @apply hidden
+}
+/* .setup {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  
+  .setup img:first-child {
+    grid-area: 1 / 1 / 5 / 2;
+  }
+  
+  .setup img:nth-child(2) {
+    grid-area: 5 / 1 / 9 / 3;
+  }
+  
+  .setup img:nth-child(3) {
+    grid-area: 2 / 2 / 5 / 6;
+  }
+  
+  .setup img:nth-child(4) {
+    grid-area: 1 / 11 / 6 / 13;
+  }
+  
+  .setup img:nth-child(5) {
+    grid-area: 3 / 6 / 7 / 8;
+  }
+  
+  .setup img:nth-child(6) {
+    grid-area: 5 / 3 / 8 / 6;
+  }
+  
+  .setup img:nth-child(7) {
+    grid-area: 2 / 8 / 6 / 11;
+  } */
+  

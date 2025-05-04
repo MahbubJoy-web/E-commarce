@@ -1,0 +1,28 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import Layout from './Layout/Layout'
+import Home from './pages/Home'
+
+function App() {
+  const [count, setCount] = useState(0)
+  const myRoute = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>} />
+      </Route>
+    )
+  )
+
+  return (
+    <>
+      <RouterProvider router={myRoute} />
+    </>
+  )
+}
+
+export default App
+
+// ===============02/05/2025-->(video part-6) ===============//
