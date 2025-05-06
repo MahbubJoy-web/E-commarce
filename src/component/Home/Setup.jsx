@@ -1,13 +1,13 @@
 import React from 'react'
-import setimg from '../assets/Image/setup-1.png'
-import setimg2 from '../assets/Image/setup-2.png'
-import setimg3 from '../assets/Image/setup-3.png' 
-import setimg4 from '../assets/Image/setup-4.png'
-import setimg5 from '../assets/Image/setup-5.png'
-import setimg6 from '../assets/Image/setup-6.png'
-import setimg7 from '../assets/Image/setup-7.png'
-import setimg8 from '../assets/Image/setup-8.png'
-import setimg9 from '../assets/Image/setup-9.png'
+import setimg from '../../assets/Image/setup-1.png'
+import setimg2 from '../../assets/Image/setup-2.png'
+import setimg3 from '../../assets/Image/setup-3.png' 
+import setimg4 from '../../assets/Image/setup-4.png'
+import setimg5 from '../../assets/Image/setup-5.png'
+import setimg6 from '../../assets/Image/setup-6.png'
+import setimg7 from '../../assets/Image/setup-7.png'
+import setimg8 from '../../assets/Image/setup-8.png'
+import setimg9 from '../../assets/Image/setup-9.png'
 
 
 const Setup = () => {

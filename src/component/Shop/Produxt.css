@@ -1,0 +1,12 @@
+.panigation ul {
+    @apply flex items-center gap-2 mt-[70px]
+}
+.panigation ul li a{
+    @apply py-[15px] px-[27px] bg-[#F9F1E7] text-[20px] font-poppins font-normal rounded-[10px]
+}
+.panigation ul .selected a{
+    @apply text-white bg-[#B88E2F]
+}
+.panigation ul .previous  a{
+    @apply hidden
+}

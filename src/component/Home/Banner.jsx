@@ -1,6 +1,6 @@
 import React from 'react'
-import BannnerBG from '../assets/Image/Banner_bg.png'
-import Button from './Button'
+import BannnerBG from '../../assets/Image/Banner_bg.png'
+import Button from '../Button'
 
 const Banner = () => {
   return (

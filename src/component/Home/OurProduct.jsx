@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductItems from './ProductItems'
+import ProductItems from '../ProductItems'
 
 
 const OurProduct = () => {
@@ -9,7 +9,7 @@ const OurProduct = () => {
         <div className="container">
            <h2 className='tittle !text-[40px] text-center mb-[32px]'>Our Products</h2>
            <div className="flex justify-center">
-                <div className="w-[1236px] flex flex-wrap gap-[32px] justify-center">
+                <div className="w-[1236px] grid grid-cols-4 gap-[30px]">
                     <ProductItems/>
                     <ProductItems/>
                     <ProductItems/>

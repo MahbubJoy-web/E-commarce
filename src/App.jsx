@@ -5,6 +5,7 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout/Layout'
 import Home from './pages/Home'
+import Shop from './pages/Shop'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<Layout/>}>
         <Route index element={<Home/>} />
+        <Route path='/Shop' element={<Shop/>} />
       </Route>
     )
   )
@@ -24,5 +26,4 @@ function App() {
 }
 
 export default App
-
-// ===============02/05/2025-->(video part-6) ===============//
+// ================07/05/2025 --->vd part 10 complete ================//

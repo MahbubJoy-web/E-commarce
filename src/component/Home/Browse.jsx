@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from '../assets/Image/browser1.png'
-import img2 from '../assets/Image/browser2.png'
-import img3 from '../assets/Image/browser3.png'
+import img1 from '../../assets/Image/browser1.png'
+import img2 from '../../assets/Image/browser2.png'
+import img3 from '../../assets/Image/browser3.png'
 
 const Browse = () => {
   return (

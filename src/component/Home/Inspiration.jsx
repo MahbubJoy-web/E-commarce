@@ -1,10 +1,10 @@
 import React from 'react'
-import Button from './Button'
-import sliderimg1 from '../assets/Image/sliderimg.png'
+import Button from '../Button'
+import sliderimg1 from '../../assets/Image/sliderimg.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SlidernextArrow from './SlidernextArrow';
+import SlidernextArrow from '../SlidernextArrow';
 
 const Inspiration = () => {
   var settings = {
@@ -19,7 +19,7 @@ const Inspiration = () => {
   return (
     <>
       <div className="bg-[#FCF8F3] mt-[69px] py-[44px] inspiration">
-        <div className="container flex justify-center items-center">
+        <div className="container flex flex-wrap justify-center items-center">
             <div className="titlsec">
               <div className="w-[422px] ">
                 <h2 className="tittle">50+ Beautiful rooms 
