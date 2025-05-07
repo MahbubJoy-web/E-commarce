@@ -3,9 +3,11 @@ import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { FiMenu, FiSearch, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import NavLogo from '../assets/Image/Nav-logo.png'
+import SideCart from './Cart/SideCart';
 
 const Navber = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [cartOpen, setCartOpen] = useState(false);
   return (
     <>
      <nav className="bg-white shadow-sm">
@@ -30,7 +32,7 @@ const Navber = () => {
           <FaUser className="w-[14px] h-[14px] sm:w-[20px] sm:h-[20px] cursor-pointer hover:text-gray-700" />
           <FiSearch className="w-[14px] h-[14px] sm:w-[20px] sm:h-[20px] cursor-pointer hover:text-gray-700" />
           <FaHeart className="w-[14px] h-[14px] sm:w-[20px] sm:h-[20px] cursor-pointer hover:text-gray-700" />
-          <FaShoppingCart className="w-[14px] h-[14px] sm:w-[20px] sm:h-[20px] cursor-pointer hover:text-gray-700" />
+          <FaShoppingCart onClick={()=>setCartOpen(true)} className="w-[14px] h-[14px] sm:w-[20px] sm:h-[20px] cursor-pointer hover:text-gray-700" />
           {/* Hamburger icon */}
           <div className="md:hidden">
             {mobileMenuOpen ? (
@@ -52,6 +54,11 @@ const Navber = () => {
         </div>
       )}
         </div>
+        {
+          cartOpen &&
+          <SideCart close={()=>setCartOpen(false)}/>
+
+        }
     </nav>   
     </>
   )

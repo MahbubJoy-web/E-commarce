@@ -6,6 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Layout from './Layout/Layout'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
+import ErrorPage from './component/ErrorPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Route path='/' element={<Layout/>}>
         <Route index element={<Home/>} />
         <Route path='/Shop' element={<Shop/>} />
+        <Route path='*' element={<ErrorPage/>} />
       </Route>
     )
   )
@@ -25,5 +27,4 @@ function App() {
   )
 }
 
-export default App
-// ================07/05/2025 --->vd part 10 complete ================//
+export default App 
