@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
     <div className="border-t-[1px] border-[#E0E0E0]">
-        <div className="container">
+        <div className="container flex flex-col justify-center items-center">
             <div className="border-b-[1px] border-[#E0E0E0]  py-12 flex flex-wrap">
                 <div className="">
                     <img src={icon} alt="" />

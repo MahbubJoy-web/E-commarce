@@ -6,7 +6,7 @@ import Product from '../component/Shop/Product'
 const Shop = () => {
   return (
     <>
-     <Commobanner/> 
+     <Commobanner BNtittle={'Shop'}/> 
      <Filter/>
      <Product itemsPerPage={16}/>
     </>

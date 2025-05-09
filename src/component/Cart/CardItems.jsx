@@ -10,7 +10,7 @@ const CardItems = () => {
             <div className="w-[108px] h-[105px] rounded-lg overflow-hidden">
                 <img src={itemimg} alt="" />
             </div>
-            <div className="ml-8">
+            <div className={`ml-8 `}>
                 <h2 className='text-[16px] font-poppins font-[400]'>Asgaard sofa</h2>
                 <div className="flex gap-[15px] items-center">
                     <p className=' text-[16px] font-poppins font-[300]'>1</p>

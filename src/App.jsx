@@ -7,6 +7,7 @@ import Layout from './Layout/Layout'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
 import ErrorPage from './component/ErrorPage'
+import Cart from './pages/Cart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Layout/>}>
         <Route index element={<Home/>} />
         <Route path='/Shop' element={<Shop/>} />
+        <Route path='/Cart' element={<Cart/>} />
         <Route path='*' element={<ErrorPage/>} />
       </Route>
     )
