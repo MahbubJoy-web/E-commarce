@@ -22,7 +22,7 @@ const OurProduct = () => {
            </div>
               <div className="text-center mt-[32px]">
                  <button className=' w-[245px] px-[74px] py-[12px] text-[#B88E2F] font-poppins font-semibold text-[16px] border-[1px] border-[#B88E2F]'>Show More</button>
-                 </div>
+              </div>
         </div>
       </div>
     </>

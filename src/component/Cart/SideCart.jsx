@@ -4,6 +4,10 @@ import CardItems from './CardItems'
 import { Link } from 'react-router-dom'
 
 const SideCart = ({close}) => {
+
+  const popcrss= ()=>{
+    close()
+  }
   return (
     <>
       <div className="fixed top-0 right-0 w-full h-full bg-black/50 z-10">
@@ -25,7 +29,7 @@ const SideCart = ({close}) => {
                     <p className='font-poppins font-medium text-[18px] text-[#B88E2F]'>$ 1,200.00</p>
                 </div>
                 <div className="flex justify-center border-t-[1px] border-b-[#E5E5E5] pt-[26px] pb-[10px] gap-[14px]">
-                    <Link to={'/Cart'} className='px-[30px] py-[6px] rounded-[50px] border-[1px] border-[#000] text-black font-poppins font-normal text-xl'>Cart</Link>
+                    <Link to={'/Cart'} onClick={popcrss} className='px-[30px] py-[6px] rounded-[50px] border-[1px] border-[#000] text-black font-poppins font-normal text-xl'>Cart</Link>
                     <Link className='px-[30px] py-[6px] rounded-[50px] border-[1px] border-[#000] text-black font-poppins font-normal text-xl'>Checkout</Link>
                 </div>
             </div>
